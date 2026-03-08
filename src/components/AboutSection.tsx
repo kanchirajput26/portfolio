@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import kanchiPhoto from "@/assets/kanchi-photo.png";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -18,11 +19,12 @@ const AboutSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">Who I Am</h2>
 
           <div className="grid md:grid-cols-[auto_1fr] gap-8 items-start">
-            {/* Photo + intro */}
             <div className="flex flex-col items-center md:items-start gap-5">
-              <div className="w-40 h-40 rounded-2xl overflow-hidden border-2 border-primary/20 bg-secondary flex items-center justify-center shrink-0">
-                <span className="text-5xl">👩🏽‍💼</span>
-              </div>
+              <img
+                src={kanchiPhoto}
+                alt="Kanchi Rajput"
+                className="w-40 h-40 rounded-2xl object-cover border-2 border-primary/20 shrink-0"
+              />
             </div>
 
             <div className="space-y-6">
