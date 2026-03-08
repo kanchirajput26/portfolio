@@ -17,16 +17,24 @@ const AboutSection = () => {
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">About</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">Who I Am</h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I am an aspiring <span className="text-foreground font-medium">Project Manager and Product Intern</span> with experience in workflow automation, KPI tracking, Agile collaboration, and organizational change management.
-              </p>
-              <p>
-                I focus on structured execution, data-driven visibility, and delivering projects on time and with clarity.
-              </p>
+          <div className="grid md:grid-cols-[auto_1fr] gap-8 items-start">
+            {/* Photo + intro */}
+            <div className="flex flex-col items-center md:items-start gap-5">
+              <div className="w-40 h-40 rounded-2xl overflow-hidden border-2 border-primary/20 bg-secondary flex items-center justify-center shrink-0">
+                <span className="text-5xl">👩🏽‍💼</span>
+              </div>
             </div>
-            <div className="space-y-4">
+
+            <div className="space-y-6">
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  I am an aspiring <span className="text-foreground font-medium">Project Manager and Product Intern</span> with experience in workflow automation, KPI tracking, Agile collaboration, and organizational change management.
+                </p>
+                <p>
+                  I focus on structured execution, data-driven visibility, and delivering projects on time and with clarity.
+                </p>
+              </div>
+
               <div className="glass-card rounded-xl p-5 space-y-3">
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Name</span>
