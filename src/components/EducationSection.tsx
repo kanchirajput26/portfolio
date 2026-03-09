@@ -94,7 +94,7 @@ const EducationSection = () => {
                 ].map((course) => (
                   <span
                     key={course}
-                    className="text-[11px] font-normal px-2.5 py-1 rounded-full border border-border/50 text-muted-foreground"
+                    className="text-[11px] font-normal px-2.5 py-1 rounded-full border border-border text-muted-foreground"
                   >
                     {course}
                   </span>
