@@ -20,7 +20,7 @@ const HeroSection = () => {
             Kanchi Rajput
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-4">
-            Project Management{" "}
+            Project{" "}
             <span className="text-primary">•</span> Product{" "}
             <span className="text-primary">•</span> Agile
           </p>
