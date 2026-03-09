@@ -13,13 +13,13 @@ const experiences = [
     tags: ["MS Project", "Scheduling", "Resource Leveling", "Mentoring"],
   },
   {
-    title: "Classroom Support & Student Coordination",
+    title: "TechOps",
     company: "USC Annenberg School of Journalism, Los Angeles, CA",
     period: "Aug 2025 – Dec 2025",
     role: "TechOps",
     description: [
-      "Assisted in mapping classroom operations, maintaining schedules, and collaborating with peers to ensure smooth day to day activities",
-      "Manage backend updates, secure access and serve as tech bridge between students, faculty and digital infrastructure",
+      "Assisted in mapping classroom operations, maintaining schedules, and collaborating with peers to ensure smooth day-to-day activities",
+      "Manage backend updates, secure access and serve as technical bridge between students, faculty and digital infrastructure",
     ],
     tags: ["Operations", "Coordination", "Tech Support", "Scheduling"],
   },
