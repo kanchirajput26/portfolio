@@ -1,62 +1,42 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import {
-  Code,
-  CalendarCheck,
-  IterationCcw,
-  BarChart3,
-  Target,
-  Users,
-  LineChart,
-  Cloud,
-  Palette,
-} from "lucide-react";
 
-const skills = [
+const skillCategories = [
   {
     name: "Programming & Scripting",
-    description: "SQL, JavaScript, Google App Script, Python, C++, MATLAB",
-    icon: Code,
+    items: ["SQL", "JavaScript", "Google App Script", "Python", "C++", "MATLAB"],
   },
   {
     name: "Project Planning & Scheduling",
-    description: "Work breakdown structures (WBS), Gantt charts, dependency mapping, milestone planning",
-    icon: CalendarCheck,
+    items: ["WBS", "Gantt Charts", "Dependency Mapping", "Milestone Planning"],
   },
   {
     name: "Agile, Scrum & Waterfall",
-    description: "Sprint planning, backlog management, stand-ups, and iterative delivery",
-    icon: IterationCcw,
+    items: ["Sprint Planning", "Backlog Management", "Stand-ups", "Iterative Delivery"],
   },
   {
     name: "Business Case & NPV Analysis",
-    description: "Business case development, cost–benefit analysis, and Net Present Value (NPV) analysis",
-    icon: BarChart3,
+    items: ["Business Case Development", "Cost–Benefit Analysis", "NPV Analysis"],
   },
   {
     name: "Project Management Tools",
-    description: "Jira, Trello, Notion, MS Project for task tracking, sprint planning, and resource allocation",
-    icon: Target,
+    items: ["Jira", "Trello", "Notion", "MS Project"],
   },
   {
     name: "Productivity & Collaboration",
-    description: "Google Sheets, Excel, Microsoft Suite, Outlook, Slack, Quip, and Zendesk",
-    icon: Users,
+    items: ["Google Sheets", "Excel", "Microsoft Suite", "Slack", "Quip", "Zendesk"],
   },
   {
     name: "Data Visualisation & Reporting",
-    description: "Power BI and Tableau for dashboard creation, reporting, and visualisation of project data",
-    icon: LineChart,
+    items: ["Power BI", "Tableau"],
   },
   {
     name: "Cloud & Analytics",
-    description: "Foundational exposure to Microsoft Azure, AWS, and Google Cloud Platform (GCP)",
-    icon: Cloud,
+    items: ["Microsoft Azure", "AWS", "Google Cloud Platform"],
   },
   {
     name: "Design & Visual Tools",
-    description: "Figma, Adobe Photoshop, Illustrator, Canva, Lucidchart, Miro, Visio",
-    icon: Palette,
+    items: ["Figma", "Adobe Photoshop", "Illustrator", "Canva", "Lucidchart", "Miro", "Visio"],
   },
 ];
 
@@ -76,20 +56,25 @@ const SkillsSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-12">What I Bring</h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skills.map((skill, i) => (
+        <div className="space-y-8">
+          {skillCategories.map((category, i) => (
             <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 30 }}
+              key={category.name}
+              initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.06 }}
-              className="glass-card rounded-xl p-6 hover-lift group"
+              transition={{ duration: 0.4, delay: i * 0.05 }}
             >
-              <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary mb-3 group-hover:bg-primary/20 transition-colors">
-                <skill.icon size={20} />
+              <h3 className="text-sm font-semibold text-foreground mb-3">{category.name}</h3>
+              <div className="flex flex-wrap gap-2">
+                {category.items.map((item) => (
+                  <span
+                    key={item}
+                    className="text-xs px-3 py-1.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
-              <h3 className="text-sm font-semibold text-foreground mb-1">{skill.name}</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">{skill.description}</p>
             </motion.div>
           ))}
         </div>

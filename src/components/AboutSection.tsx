@@ -25,7 +25,7 @@ const AboutSection = () => {
               className="w-full h-full rounded-2xl object-cover border-2 border-primary/20"
             />
 
-            <div className="flex flex-col justify-center space-y-4 text-muted-foreground leading-relaxed">
+            <div className="flex flex-col justify-center space-y-4 text-muted-foreground leading-relaxed text-justify">
               <p>
                 I am an aspiring <span className="text-foreground font-medium">Project and Product Manager</span>, pursuing a Master's in Engineering Management at USC with a background in Electronics and Communication Engineering, passionate about building impactful products and executing projects with clarity and structure. My experience spans product planning, user research, project scheduling, budgeting, NPV analysis, and workflow automation through JavaScript-based systems and MIS reporting to improve operational visibility and data-driven decision making. I focus on translating ideas into structured execution while aligning technology and business goals to deliver scalable solutions.
               </p>
