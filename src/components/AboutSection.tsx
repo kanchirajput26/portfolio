@@ -23,7 +23,7 @@ const AboutSection = () => {
               <img
                 src={kanchiPhoto}
                 alt="Kanchi Rajput"
-                className="w-40 h-40 rounded-2xl object-cover border-2 border-primary/20 shrink-0"
+                className="w-56 h-56 rounded-2xl object-cover border-2 border-primary/20 shrink-0"
               />
             </div>
 
