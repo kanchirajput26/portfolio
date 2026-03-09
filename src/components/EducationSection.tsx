@@ -73,7 +73,7 @@ const EducationSection = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground">
                   Bachelor of Technology in Electronics Engineering
                 </h3>
-                <p className="text-muted-foreground">Shiv Nadar Institute of Eminence, Uttar Pradesh, Noida</p>
+                <p className="text-muted-foreground">Shiv Nadar Institute of Eminence, Noida, India</p>
                 <p className="text-xs text-primary mt-1">Aug 2020 – May 2024</p>
               </div>
             </div>
