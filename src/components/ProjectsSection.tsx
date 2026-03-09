@@ -67,8 +67,8 @@ const ProjectsSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">Project Experience</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">Case Studies</h2>
+          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">Projects</p>
+          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">Project Experience</h2>
           <p className="text-muted-foreground mb-12">Professional & Academic Projects</p>
         </motion.div>
 
