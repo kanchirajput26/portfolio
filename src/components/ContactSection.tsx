@@ -76,7 +76,7 @@ const ContactSection = () => {
               </div>
             </a>
 
-            <a href="./KanchiRajput_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group w-full text-left">
+            <a href="/portfolio/KanchiRajput_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group w-full text-left">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <FileDown size={20} className="text-primary" />
               </div>
