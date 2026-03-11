@@ -20,6 +20,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileOpen(false);
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -38,6 +48,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
@@ -71,7 +82,8 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setMobileOpen(false)}
+             // {/* onClick={() => setMobileOpen(false)} */}
+                onClick={(e) => handleNavClick(e, link.href)}
               className="block py-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
