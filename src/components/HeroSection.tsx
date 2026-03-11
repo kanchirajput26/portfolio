@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { ArrowDown, FileDown, Mail } from "lucide-react";
 
 const HeroSection = () => {
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden section-padding pt-32">
       {/* Ambient glow */}
@@ -37,6 +44,7 @@ const HeroSection = () => {
         >
           <a
             href="#projects"
+            onClick={(e) => handleScrollTo(e, 'projects')}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
           >
             View Projects
