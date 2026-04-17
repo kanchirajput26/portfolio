@@ -25,7 +25,7 @@ const projects = [
     ],
     tools: ["Figma", "User Research", "Wireframing", "Prototyping"],
     color: "from-blue-500/20 to-cyan-500/20",
-    behanceUrl: "https://www.behance.net/kanchirajput",
+    behanceUrl: "https://www.behance.net/gallery/194363873/Tiny-Treasure-Case-Study",
   },
   {
     title: "USC Housing Mobile Application – Project Planning & Organizational Change Management",
@@ -51,7 +51,7 @@ const projects = [
     ],
     tools: ["Figma", "Photoshop", "Illustrator", "UX Design", "Branding"],
     color: "from-purple-500/20 to-pink-500/20",
-    behanceUrl: "https://www.behance.net/kanchirajput",
+    behanceUrl: "https://www.behance.net/gallery/202148643/Homepage-KaapiMachines",
   },
 ];
 
