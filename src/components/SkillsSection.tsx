@@ -1,62 +1,44 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
-  Code,
-  CalendarCheck,
-  IterationCcw,
+  GanttChart,
+  KanbanSquare,
   BarChart3,
-  Target,
-  Users,
-  LineChart,
   Cloud,
   Palette,
+  Sparkles,
 } from "lucide-react";
 
 const skills = [
   {
-    name: "Programming & Scripting",
-    description: "SQL, JavaScript, Google App Script, Python, C++, MATLAB",
-    icon: Code,
+    name: "Agile & Project Planning",
+    description: "Sprint planning, backlog management, Agile, Scrum, Waterfall, WBS, Gantt charts, dependency mapping, milestone planning",
+    icon: GanttChart,
   },
   {
-    name: "Project Planning & Scheduling",
-    description: "Work breakdown structures (WBS), Gantt charts, dependency mapping, milestone planning",
-    icon: CalendarCheck,
+    name: "PM & Collaboration Tools",
+    description: "Jira, Trello, Notion, MS Project, Google Workspace, Microsoft Suite, Slack, Outlook",
+    icon: KanbanSquare,
   },
   {
-    name: "Agile, Scrum & Waterfall",
-    description: "Sprint planning, backlog management, stand-ups, and iterative delivery",
-    icon: IterationCcw,
-  },
-  {
-    name: "Business Case & NPV Analysis",
-    description: "Business case development, cost–benefit analysis, and Net Present Value (NPV) analysis",
+    name: "Business Case & Data Analysis",
+    description: "Business case development, cost-benefit analysis, NPV analysis, Power BI, Tableau, dashboarding, reporting",
     icon: BarChart3,
   },
   {
-    name: "Project Management Tools",
-    description: "Jira, Trello, Notion, MS Project for task tracking, sprint planning, and resource allocation",
-    icon: Target,
-  },
-  {
-    name: "Productivity & Collaboration",
-    description: "Google Sheets, Excel, Microsoft Suite, Outlook, Slack, Quip, and Zendesk",
-    icon: Users,
-  },
-  {
-    name: "Data Visualisation & Reporting",
-    description: "Power BI and Tableau for dashboard creation, reporting, and visualisation of project data",
-    icon: LineChart,
-  },
-  {
-    name: "Cloud & Analytics",
-    description: "Foundational exposure to Microsoft Azure, AWS, and Google Cloud Platform (GCP)",
+    name: "Technical & Cloud Skills",
+    description: "SQL, Python, JavaScript, Google App Script, C++, MATLAB, Azure, AWS, Google Cloud Platform",
     icon: Cloud,
   },
   {
     name: "Design & Visual Tools",
-    description: "Figma, Adobe Photoshop, Illustrator, Canva, Lucidchart, Miro, Visio",
+    description: "Figma, Adobe Photoshop, Illustrator, Canva, Miro, Lucidchart, Visio",
     icon: Palette,
+  },
+  {
+    name: "AI Skills",
+    description: "Vercel V0, Claude Code, vibe coding, Claude Cowork, prompt engineering, context engineering",
+    icon: Sparkles,
   },
 ];
 

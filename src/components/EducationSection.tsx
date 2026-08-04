@@ -34,7 +34,7 @@ const EducationSection = () => {
                   Master of Science in Engineering Management
                 </h3>
                 <p className="text-muted-foreground">University of Southern California, Los Angeles, CA</p>
-                <p className="text-xs text-primary mt-1">Aug 2025 – Present</p>
+                <p className="text-xs text-muted-foreground mt-1">Aug 2025 – Present</p>
               </div>
             </div>
             <div className="w-full">
@@ -74,7 +74,7 @@ const EducationSection = () => {
                   Bachelor of Technology in Electronics Engineering
                 </h3>
                 <p className="text-muted-foreground">Shiv Nadar Institute of Eminence, Noida, India</p>
-                <p className="text-xs text-primary mt-1">Aug 2020 – May 2024</p>
+                <p className="text-xs text-muted-foreground mt-1">Aug 2020 – May 2024</p>
               </div>
             </div>
             <div className="w-full">

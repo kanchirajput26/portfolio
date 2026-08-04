@@ -10,7 +10,7 @@ const HeroSection = () => {
     }
   };
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden section-padding pt-32">
+    <section className="min-h-[85vh] flex items-center justify-center relative overflow-hidden section-padding pt-24">
       {/* Ambient glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
@@ -32,7 +32,7 @@ const HeroSection = () => {
             <span className="text-primary">•</span> Agile
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-10">
-            Engineering Management graduate student at USC focused on project planning, workflow optimization, and cross-functional execution. Seeking Summer 2026 internships in Project Management, Product, and Agile roles across the U.S.
+            Engineering Management graduate student at USC focused on project planning, workflow optimization, and cross-functional execution. Seeking fulltime roles for 2026 in Project Management, Product, and Agile roles across the U.S.
           </p>
         </motion.div>
 
