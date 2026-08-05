@@ -32,7 +32,7 @@ const HeroSection = () => {
             <span className="text-primary">•</span> Agile
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-10">
-            Engineering Management graduate student at USC focused on project planning, workflow optimization, and cross-functional execution. Seeking fulltime roles for 2026 in Project Management, Product, and Agile roles across the U.S.
+            Engineering Management graduate student at USC focused on project planning, workflow optimization, and AI-driven product execution. Seeking full-time roles for 2026 in Project Management, Product, Agile, and AI Project Management roles across the U.S.
           </p>
         </motion.div>
 

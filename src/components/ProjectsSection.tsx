@@ -85,6 +85,7 @@ const projects = [
   {
     title: "Kaapi Machines Website Redesign – UI/UX & Web Design",
     context: "Client: Kaapi Machines | Mar 2024 – May 2024",
+    story: "My manager gave me this project specifically to test something harder than designing from scratch: redesigning a site that already existed and already worked, well enough that any change had to actually be better, not just different. Kaapi Machines sells premium coffee equipment to cafés, hotels, and offices, and their existing site worked, but felt dated and buried its own strengths. I started with competitive analysis across a wide set of coffee-equipment and B2B product sites, noting down features their competitors had that Kaapi's site didn't, that list became the actual brief, not just my opinion of what looked outdated. From there I redesigned three core page types - homepage, product listing, and product detail, end to end in Figma, building the hero banners from scratch in Photoshop rather than reusing existing assets. One concrete fix that came directly out of the competitive audit: the existing site buried products behind too many clicks, so I restructured the navigation to get from browse to any product page in 2 clicks instead of 4.",
     bullets: [
       "Benchmarked against 6 competitor sites to identify usability gaps and inform design strategy.",
       "Redesigned 3 core page types (homepage, product listing, product detail) end-to-end in Figma, establishing a consistent design system across the site.",
