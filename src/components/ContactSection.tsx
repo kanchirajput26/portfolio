@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Linkedin, Mail, FileDown, Send, Globe } from "lucide-react";
+import { Linkedin, Mail, FileDown, Send, Globe, CalendarClock } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -100,6 +100,21 @@ const ContactSection = () => {
               <div>
                 <p className="font-medium text-foreground text-sm">Resume</p>
                 <p className="text-xs text-muted-foreground">Download PDF</p>
+              </div>
+            </a>
+
+            <a
+              href="https://calendly.com/kanchira-usc/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 glass-card rounded-xl p-5 hover-lift group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <CalendarClock size={20} className="text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">Schedule a Call</p>
+                <p className="text-xs text-muted-foreground">Book 30 min via Calendly</p>
               </div>
             </a>
           </motion.div>

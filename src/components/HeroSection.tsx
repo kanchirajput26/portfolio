@@ -27,9 +27,9 @@ const HeroSection = () => {
             Kanchi Rajput
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-4">
-            Project{" "}
-            <span className="text-primary">•</span> Product{" "}
-            <span className="text-primary">•</span> Agile
+            AI{" "}
+            <span className="text-primary">•</span> Project{" "}
+            <span className="text-primary">•</span> Product
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-10">
             Engineering Management graduate student at USC focused on project planning, workflow optimization, and AI-driven product execution. Seeking full-time roles for 2026 in Project Management, Product, Agile, and AI Project Management roles across the U.S.

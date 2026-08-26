@@ -13,15 +13,14 @@ const experiences = [
     tags: ["MS Project", "Scheduling", "Resource Leveling", "Mentoring"],
   },
   {
-    title: "TechOps",
-    company: "USC Annenberg School of Journalism, Los Angeles, CA",
-    period: "Aug 2025 – Dec 2025",
-    role: "TechOps",
+    title: "MIS Intern",
+    company: "Robot Components Private Limited, Faridabad, India",
+    period: "Jun 2025 – Jul 2025",
     description: [
-      "Assisted in mapping classroom operations, maintaining schedules, and collaborating with peers to ensure smooth day-to-day activities",
-      "Manage backend updates, secure access and serve as technical bridge between students, faculty and digital infrastructure",
+      "Automated workflow tracking with Google Apps Script, cutting manual status updates by ~30% and improving real-time visibility into task progress",
+      "Generated and analyzed MIS reports to track KPIs for 15+ employees, enabling data-driven decision-making for management",
     ],
-    tags: ["Operations", "Coordination", "Tech Support", "Scheduling"],
+    tags: ["Google Apps Script", "Process Automation", "MIS Reporting", "KPI Tracking"],
   },
 ];
 

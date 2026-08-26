@@ -18,7 +18,7 @@ const education = [
   {
     degree: "Master of Science in Engineering Management",
     school: "University of Southern California, Los Angeles, CA",
-    period: "Aug 2025 – Present",
+    period: "Aug 2025 – Dec 2026",
     coursework: [
       "Engineering Project Management (ISE 515)",
       "Engineering Management of Systems Integration (ISE 519)",

@@ -37,7 +37,7 @@ const skills = [
   },
   {
     name: "AI Skills",
-    description: "Vercel V0, Claude Code, vibe coding, Claude Cowork, prompt engineering, context engineering",
+    description: "Vercel V0, Claude Code, vibe coding, Claude Cowork, prompt engineering, context engineering, spec-driven development",
     icon: Sparkles,
   },
 ];
