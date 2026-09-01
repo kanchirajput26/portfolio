@@ -12,6 +12,20 @@ import {
 
 const projects = [
   {
+    title: "Smart Scheduling Agent",
+    context: "Personal Project | Jun 2026 – Jul 2026",
+    story: "Scheduling looks like a small problem, but it's one teams deal with constantly, managing everyone's availability, meetings, priorities, deadlines, and focus time, all of which directly affects whether work gets done on time. Microsoft Outlook's Scheduling Assistant exists for exactly this reason, at scale. I wanted to work through it myself, end-to-end, as a product problem.\n\nWhat mattered more to me than the app itself was doing it with spec-driven development, deliberately, going from identifying the problem, to defining what the product should do, to writing requirements and expected behavior, to thinking through edge cases, to building from those specs, to evaluating whether the result actually solved the original problem. As a PM, I won't be writing all the code myself, but I do need to understand what's being built, why, how requirements turn into implementation, and what trade-offs an engineering team runs into along the way.\n\nThe hardest part wasn't the logic; it was the UI. There are dozens of scheduling tools already out there, and having used so many of them made it genuinely harder to design my own from scratch without just defaulting to something I'd seen before.",
+    bullets: [
+      "Built a task management app that sorts tasks into four priority (Do First, Schedule, Delegate, Eliminate) based on urgency and importance, with an override option to manually pin a task to a quadrant.",
+      "Added three ways to view tasks - Quadrant board, Timeline (grouped by Today/This week), and Calendar, plus an Overview dashboard showing active, overdue, completed task counts and a quadrant distribution breakdown.",
+      "Included subtasks with progress tracking (e.g. 0/3 complete) on individual tasks.",
+      "Built with Next.js, React, and Framer Motion for animations; deployed on Vercel.",
+    ],
+    tools: ["Next.js", "React", "Framer Motion", "dnd-kit", "Claude Code", "Vercel"],
+    color: "from-lime-500/20 to-green-500/20",
+    liveUrl: "https://smart-scheduling-agent.vercel.app/",
+  },
+  {
     title: "Career Path Navigator",
     context: "Personal Project | Jun 2026 – Jul 2026",
     story: "During my own job search, I kept seeing the same thing happen to friends and fellow PMs: they had solid backgrounds but genuinely couldn't tell which roles they were a fit for. Generic advice like \"leverage your skills”, “network more\" wasn't helping anyone. So I built Career Path Navigator - paste a resume, upload a file, or link LinkedIn, and get AI-matched career paths with real skill gaps identified. The LinkedIn input was the hard part; the first version pulled shallow, inaccurate results. The fix wasn't a better prompt, it was better input: instead of just reading the profile summary, I had it browse the actual page, what the person had liked, their About section, their listed projects, to build a real picture of someone's interests and experience, not just job titles. That one change took the output from generic to genuinely useful.",
@@ -146,7 +160,13 @@ const ProjectCard = ({ project, index }: { project: (typeof projects)[number]; i
                     <DialogTitle className="font-display pr-8">{project.title}</DialogTitle>
                     <DialogDescription className="text-xs">{project.context}</DialogDescription>
                   </DialogHeader>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{project.story}</p>
+                  <div className="space-y-3">
+                    {project.story.split("\n\n").map((paragraph, idx) => (
+                      <p key={idx} className="text-sm text-muted-foreground leading-relaxed text-justify">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </DialogContent>
               </Dialog>
             </>
