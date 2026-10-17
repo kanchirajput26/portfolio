@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    title: "Product Positioning & Go-to-Market | Product Marketing Manager Intern",
+    title: "Product Marketing Manager Intern",
     company: "EducationPals.ai, Santa Clara, CA (Remote)",
     period: "Sep 2026 – Present",
     description: [
