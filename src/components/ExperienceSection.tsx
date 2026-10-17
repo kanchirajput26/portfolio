@@ -3,16 +3,16 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    title: "Product Marketing Manager Intern - Product Positioning & Go-to-Market",
+    title: "Product Positioning & Go-to-Market | Product Marketing Manager Intern",
     company: "EducationPals.ai, Santa Clara, CA (Remote)",
     period: "Sep 2026 – Present",
     description: [
-      "Own positioning, messaging, and value propositions for an AI-native learning platform and its course catalog, working directly with the CEO to align the product narrative with company vision and target learner needs",
-      "Research the competitive landscape, audience segments, and category trends in AI-driven education, synthesizing findings into actionable insights that inform go-to-market planning for new course and feature launches",
-      "Create marketing content and launch materials, including landing page copy, email campaigns, and social posts",
-      "Track channel and campaign performance to identify what resonates with learners, using those insights to strengthen future launch strategies",
+      "Own positioning, messaging and value propositions for an AI-native learning platform and its course catalog, working directly with the CEO to align product narrative with company vision and target learner needs.",
+      "Research the competitive landscape, audience segments and category trends in AI-driven education, synthesizing findings into actionable insights that inform go-to-market planning for new course and feature launches.",
+      "Create marketing content and launch materials, including landing page copy, email campaigns and social posts.",
+      "Track channel and campaign performance to identify what resonates with learners, using insights to strengthen future launch strategies.",
     ],
-    tags: ["Product Positioning", "Go-to-Market", "Competitive Research", "Google Workspace"],
+    tags: ["Excel", "Google Workspace", "Claude"],
   },
   {
     title: "Teaching Assistant - ISE 515: Engineering Project Management",
